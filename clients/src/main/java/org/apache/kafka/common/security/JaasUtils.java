@@ -84,6 +84,7 @@ public class JaasUtils {
 
     public static boolean isZkSecurityEnabled() {
         boolean isSecurityEnabled = false;
+/*
         boolean zkSaslEnabled = Boolean.parseBoolean(System.getProperty(ZK_SASL_CLIENT, "true"));
         String zkLoginContextName = System.getProperty(ZK_LOGIN_CONTEXT_NAME_KEY, "Client");
 
@@ -99,7 +100,7 @@ public class JaasUtils {
                         "SASL in the ZooKeeper client");
             throw new KafkaException("Exception while determining if ZooKeeper is secure");
         }
-
+*/
         return isSecurityEnabled;
     }
 }
